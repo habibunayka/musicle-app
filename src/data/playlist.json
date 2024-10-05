@@ -1,0 +1,292 @@
+{
+    "yourPlaylists": {
+        "love-song": {
+            "title": "Love Song",
+            "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da842fcc7e9b41b94f4c290a302d",
+            "color": "#ef4444",
+            "link": "love-song",
+            "songs": [
+                {
+                    "title": "Perfect",
+                    "artist": "Ed Sheeran",
+                    "album": "Divide",
+                    "duration": "4:23",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96"
+                },
+                {
+                    "title": "I Will Always Love You",
+                    "artist": "Whitney Houston",
+                    "album": "The Bodyguard",
+                    "duration": "4:31",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e02456c0b5d0316a80dc600802e"
+                },
+                {
+                    "title": "All of Me",
+                    "artist": "John Legend",
+                    "album": "Love in the Future",
+                    "duration": "4:29",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e0294c9217a398f5174757c0c78"
+                },
+                {
+                    "title": "Unchained Melody",
+                    "artist": "The Righteous Brothers",
+                    "album": "Just Once in My Life",
+                    "duration": "3:38",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e02cd7530409d09802935c840f9"
+                }
+            ]
+        },
+        "gaming-mode": {
+            "title": "Gaming Mode",
+            "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cd369df8731916f13a0bdd1ff",
+            "color": "#22c55e",
+            "link": "gaming-mode",
+            "songs": [
+                {
+                    "title": "Warriors",
+                    "artist": "Imagine Dragons",
+                    "album": "Smoke + Mirrors",
+                    "duration": "4:00",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e02fc4fd5caca9f1dc4a3b0460a"
+                },
+                {
+                    "title": "Believer",
+                    "artist": "Imagine Dragons",
+                    "album": "Evolve",
+                    "duration": "3:24",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e025675e83f707f1d7271e5cf8a"
+                },
+                {
+                    "title": "Battle Cry",
+                    "artist": "Imagine Dragons",
+                    "album": "The Last Guardian (Original Soundtrack)",
+                    "duration": "4:11",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e0259ac0a9acb7bf0d315301152"
+                },
+                {
+                    "title": "Light Em Up",
+                    "artist": "Fall Out Boy",
+                    "album": "Save Rock and Roll",
+                    "duration": "3:27",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e02483a98632e23f6d2623ab75c"
+                }
+            ]
+        },
+        "fanny-sad": {
+            "title": "Fanny Sad",
+            "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cba7708367c85a980377b2419",
+            "color": "#3b82f6",
+            "link": "fanny-sad",
+            "songs": [
+                {
+                    "title": "Someone Like You",
+                    "artist": "Adele",
+                    "album": "21",
+                    "duration": "4:45",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e02164feb363334f93b6458d2a9"
+                },
+                {
+                    "title": "Fix You",
+                    "artist": "Coldplay",
+                    "album": "X&Y",
+                    "duration": "4:55",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651"
+                },
+                {
+                    "title": "Secret Love Song",
+                    "artist": "Little Mix",
+                    "album": "Get Weird (Expand Edition)",
+                    "duration": "4:09",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e02995994477ea1ae8097978bf8"
+                },
+                {
+                    "title": "Breathe Me",
+                    "artist": "Sia",
+                    "album": "Colour the Small One",
+                    "duration": "4:24",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e02940e6dd89f311e726fb5687c"
+                }
+            ]
+        },
+        "coding-vibes": {
+            "title": "Coding Vibes",
+            "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c13050a022257da8b7b664090",
+            "color": "#eab308",
+            "link": "coding-vibes",
+            "songs": [
+                {
+                    "title": "Weightless",
+                    "artist": "Marconi Union",
+                    "album": "Weightless",
+                    "duration": "8:00",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e02f399efa20097105e9db88560"
+                },
+                {
+                    "title": "Clair de Lune",
+                    "artist": "Claude Debussy",
+                    "album": "Suite Bergamasque",
+                    "duration": "5:00",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e0299ceb4525e9bfedbc189bc98"
+                },
+                {
+                    "title": "Night Owl",
+                    "artist": "Galimatias",
+                    "album": "I Am Free",
+                    "duration": "3:42",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e02e2b7bfaf573160cb03564fd7"
+                },
+                {
+                    "title": "We Can Fly",
+                    "artist": "Rufus du Sol",
+                    "album": "Atlas",
+                    "duration": "5:03",
+                    "cover": "https://link.to/wecanfly-cover.jpg"
+                }
+            ]
+        },
+        "japanese-song": {
+            "title": "Japanese Song",
+            "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72ca85e49005fff669f7780e12a",
+            "color": "#f3727f",
+            "link": "japanese-song",
+            "songs": [
+                {
+                    "title": " 好きだから",
+                    "artist": "『ユイカ』",
+                    "album": " 好きだから",
+                    "duration": "4:58",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e02d36c9f45b61735554adbaa03"
+                },
+                {
+                    "title": "HELP!!!",
+                    "artist": "Kobo Kanaeru",
+                    "album": "HELP!!!",
+                    "duration": "3:07",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e02e0c4007daaad3c26ce9090e9"
+                },
+                {
+                    "title": "あのね。",
+                    "artist": "あれくん &『ユイカ』",
+                    "album": "あのね。",
+                    "duration": "3:34",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e0296eb3e846835abdcb3ed85e6"
+                },
+                {
+                    "title": "香水",
+                    "artist": "ダズビ",
+                    "album": "香水",
+                    "duration": "4:08",
+                    "cover": "https://i.scdn.co/image/ab67616d00001e028a56883aabf5bea0e4b3a897"
+                }
+            ]
+        }
+    },
+
+    "discover": {
+        "trending-now": {
+            "title": "Trending Now",
+            "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8424ada4e2ad241b53c5822757",
+            "color": "#FF6347",
+            "songs": [
+                {
+                    "title": "Blinding Lights",
+                    "artist": "The Weeknd",
+                    "album": "After Hours",
+                    "duration": "3:20",
+                    "cover": "https://link.to/blindinglights-cover.jpg"
+                },
+                {
+                    "title": "Levitating",
+                    "artist": "Dua Lipa",
+                    "album": "Future Nostalgia",
+                    "duration": "3:23",
+                    "cover": "https://link.to/levitating-cover.jpg"
+                }
+            ]
+        },
+        "chill-vibes": {
+            "title": "Chill Vibes",
+            "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8487c015e002c7f9d76808ed58",
+            "color": "#ADD8E6",
+            "songs": [
+                {
+                    "title": "Sunflower",
+                    "artist": "Post Malone, Swae Lee",
+                    "album": "Spider-Man: Into the Spider-Verse",
+                    "duration": "2:38",
+                    "cover": "https://link.to/sunflower-cover.jpg"
+                },
+                {
+                    "title": "Circles",
+                    "artist": "Post Malone",
+                    "album": "Hollywood's Bleeding",
+                    "duration": "3:35",
+                    "cover": "https://link.to/circles-cover.jpg"
+                }
+            ]
+        },
+        "pop-hits": {
+            "title": "Pop Hits",
+            "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c3410a05b45c4ad0d14d8b26a",
+            "color": "#FF1493",
+            "songs": [
+                {
+                    "title": "Shape of You",
+                    "artist": "Ed Sheeran",
+                    "album": "Divide",
+                    "duration": "3:53",
+                    "cover": "https://link.to/shapeofyou-cover.jpg"
+                },
+                {
+                    "title": "Uptown Funk",
+                    "artist": "Mark Ronson ft. Bruno Mars",
+                    "album": "Uptown Special",
+                    "duration": "4:29",
+                    "cover": "https://link.to/uptownfunk-cover.jpg"
+                }
+            ]
+        },
+        "classics": {
+            "title": "Classics",
+            "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c3dcdcb8727cd0038e662f4c4",
+            "color": "#FFD700",
+            "songs": [
+                {
+                    "title": "Bohemian Rhapsody",
+                    "artist": "Queen",
+                    "album": "A Night at the Opera",
+                    "duration": "5:55",
+                    "cover": "https://link.to/bohemianrhapsody-cover.jpg"
+                },
+                {
+                    "title": "Hotel California",
+                    "artist": "Eagles",
+                    "album": "Hotel California",
+                    "duration": "6:31",
+                    "cover": "https://link.to/hotelcalifornia-cover.jpg"
+                }
+            ]
+        },
+        "lofi-beats": {
+            "title": "Japanese Songs",
+            "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c28ec53549fcb64346be0a590",
+            "color": "#8A2BE2",
+            "songs": [
+                {
+                    "title": "Snowman",
+                    "artist": "WYS",
+                    "album": "Lofi Chillhop",
+                    "duration": "2:30",
+                    "cover": "https://link.to/snowman-cover.jpg"
+                },
+                {
+                    "title": "Midnight Walk",
+                    "artist": "Lofi Sleep",
+                    "album": "Midnight Beats",
+                    "duration": "2:50",
+                    "cover": "https://link.to/midnightwalk-cover.jpg"
+                }
+            ]
+        }
+    }
+}

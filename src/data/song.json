@@ -1,0 +1,131 @@
+{
+    "playlists": [
+        {
+            "title": "New Year Celebration",
+            "desc": "56 Songs • 7h 45m",
+            "date": "01 January 2024"
+        }
+    ],
+    "songs": [
+        {
+            "title": "Can I Be Him",
+            "artist": "James Arthur",
+            "album": "Back from the Edge",
+            "duration": "4:06",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e0220beb61f61fcbeb33b10a9ab",
+            "audio": "./assets/music/can-i-be-him.mp3"
+        },
+        {
+            "title": "Shape of You",
+            "artist": "Ed Sheeran",
+            "album": "÷ (Divide)",
+            "duration": "3:53",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96",
+            "audio": "./assets/music/shape-of-you.mp3"
+        },
+        {
+            "title": "Blinding Lights",
+            "artist": "The Weeknd",
+            "album": "After Hours",
+            "duration": "3:20",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36",
+            "audio": "./assets/music/blinding-lights.mp3"
+        },
+        {
+            "title": "Levitating",
+            "artist": "Dua Lipa",
+            "album": "Future Nostalgia",
+            "duration": "3:23",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e024bc66095f8a70bc4e6593f4f",
+            "audio": "./assets/music/levitating.mp3"
+        },
+        {
+            "title": "Good 4 U",
+            "artist": "Olivia Rodrigo",
+            "album": "SOUR",
+            "duration": "2:58",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e02a91c10fe9472d9bd89802e5a",
+            "audio": "./assets/music/good-4-u.mp3"
+        },
+        {
+            "title": "Stay",
+            "artist": "The Kid LAROI, Justin Bieber",
+            "album": "F*CK LOVE 3: OVER YOU",
+            "duration": "2:21",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e0241e31d6ea1d493dd77933ee5",
+            "audio": "./assets/music/stay.mp3"
+        },
+        {
+            "title": "Peaches",
+            "artist": "Justin Bieber",
+            "album": "Justice",
+            "duration": "3:18",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e02e6f407c7f3a0ec98845e4431",
+            "audio": "./assets/music/peaches.mp3"
+        },
+        {
+            "title": "Drivers License",
+            "artist": "Olivia Rodrigo",
+            "album": "SOUR",
+            "duration": "4:02",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e02a91c10fe9472d9bd89802e5a",
+            "audio": "./assets/music/drivers-license.mp3"
+        },
+        {
+            "title": "Montero (Call Me By Your Name)",
+            "artist": "Lil Nas X",
+            "album": "Montero",
+            "duration": "2:17",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e02664034dd80e91b28f773598d",
+            "audio": "./assets/music/montero.mp3"
+        },
+        {
+            "title": "Bad Habits",
+            "artist": "Ed Sheeran",
+            "album": "=",
+            "duration": "3:51",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e02ef24c3fdbf856340d55cfeb2",
+            "audio": "./assets/music/bad-habits.mp3"
+        },
+        {
+            "title": "HELP!!!",
+            "artist": "Kobo Kanaeru",
+            "album": "HELP!!!",
+            "duration": "3:07",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e02e0c4007daaad3c26ce9090e9",
+            "audio": "./assets/music/HELP.mp3"
+        },
+        {
+            "title": "Someone You Loved",
+            "artist": "Lewis Capaldi",
+            "album": "Divinely Uninspired to a Hellish Extent",
+            "duration": "3:02",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e02fc2101e6889d6ce9025f85f2",
+            "audio": "./assets/music/someone-you-loved.mp3"
+        },
+        {
+            "title": "Perfect",
+            "artist": "Ed Sheeran",
+            "album": "÷ (Divide)",
+            "duration": "4:23",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96",
+            "audio": "./assets/music/perfect.mp3"
+        },
+        {
+            "title": "Sukidakara",
+            "artist": "Yuika",
+            "album": "Single",
+            "duration": "4:02",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e02d36c9f45b61735554adbaa03",
+            "audio": "./assets/music/sukidakara.mp3"
+        },
+        {
+            "title": "Anone",
+            "artist": "Yuika",
+            "album": "Single",
+            "duration": "4:08",
+            "thumbnail": "https://i.scdn.co/image/ab67616d00001e0296eb3e846835abdcb3ed85e6",
+            "audio": "./assets/music/anone.mp3"
+        }
+    ]
+}
