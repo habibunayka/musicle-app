@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import playlists from "../data/playlist.json";
 import Footer from "../layouts/MainLayouts/Footer";
 
 const PlaylistPage = () => {
+    const navigate = useNavigate(); // Menggunakan hook untuk navigasi
+
     return (
         <div className="w-full p-4">
             <h2 className="text-2xl font-bold mb-4 text-white">
@@ -9,27 +12,30 @@ const PlaylistPage = () => {
             </h2>
             <div className="flex overflow-x-auto no-scrollbar space-x-4 mb-8">
                 {Object.keys(playlists.yourPlaylists).map((key) => (
-                    <div key={key} className="flex-shrink-0 w-48 relative">
-                        <a href={`/playlist/${playlists.yourPlaylists[key].link}`}>
-                            <div
-                                className="rounded-lg overflow-hidden shadow-lg"
-                                style={{
-                                    backgroundColor:
-                                        playlists.yourPlaylists[key].color,
-                                }}
-                            >
-                                <img
-                                    src={playlists.yourPlaylists[key].cover}
-                                    alt={playlists.yourPlaylists[key].title}
-                                    className="w-full h-48 object-cover"
-                                />
-                                <div className="absolute bg-[#00000040] inset-0 flex items-center justify-center">
-                                    <h3 className="text-xl font-semibold text-white">
-                                        {playlists.yourPlaylists[key].title}
-                                    </h3>
-                                </div>
+                    <div 
+                        key={key} 
+                        className="flex-shrink-0 w-48 relative"
+                        onClick={() => navigate(`/playlist/${playlists.yourPlaylists[key].link}`)} // Navigasi tanpa reload
+                        style={{ cursor: "pointer" }} // Menambahkan pointer sebagai indikasi clickable
+                    >
+                        <div
+                            className="rounded-lg overflow-hidden shadow-lg"
+                            style={{
+                                backgroundColor:
+                                    playlists.yourPlaylists[key].color,
+                            }}
+                        >
+                            <img
+                                src={playlists.yourPlaylists[key].cover}
+                                alt={playlists.yourPlaylists[key].title}
+                                className="w-full h-48 object-cover"
+                            />
+                            <div className="absolute bg-[#00000040] inset-0 flex items-center justify-center">
+                                <h3 className="text-xl font-semibold text-white">
+                                    {playlists.yourPlaylists[key].title}
+                                </h3>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 ))}
             </div>

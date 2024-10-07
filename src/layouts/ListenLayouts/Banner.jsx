@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Banner = () => {
+    const navigate = useNavigate();
     return (
         <div className="flex flex-row justify-between relative gap-5 mb-8 overflow-hidden">
 
@@ -13,12 +16,12 @@ const Banner = () => {
                     Get exclusive access to all premium features, without
                     limitations.
                 </p>
-                <a
-                    href="#"
+                <div
+                    onClick={() => navigate(`./statistic`)}
                     className="px-6 py-3 mt-6 text-white bg-primary rounded-full text-lg font-semibold hover:bg-primary-dark transition duration-300"
                 >
                     Upgrade Now!
-                </a>
+                </div>
             </div>
 
             <div className="w-full h-80 bg-gray-500 rounded-lg relative overflow-hidden">
