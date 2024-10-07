@@ -4,6 +4,7 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
     const [duration, setDuration] = useState(0);
+    const [volume, setVolume] = useState(0.6);
     const audioRef = useRef(null);
 
     const togglePlayPause = () => {
@@ -85,7 +86,6 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
         resetPlayer();
     }, [currentSongIndex, songs]);
 
-    // Dapatkan durasi saat metadata sudah dimuat
     useEffect(() => {
         const handleMetadataLoad = () => {
             setDuration(audioRef.current.duration);
@@ -101,6 +101,10 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
             );
         };
     }, [currentSongIndex]);
+
+    useEffect(() => {
+        audioRef.current.volume = volume;
+    }, [volume]);
 
     return (
         <div className="flex flex-row justify-between items-center bg-secondary w-full p-4 text-white">
@@ -191,8 +195,17 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
                 <div className="relative w-32 h-1 bg-gray-600 rounded-full">
                     <div
                         className="absolute h-1 bg-primary rounded-full"
-                        style={{ width: "60%" }}
+                        style={{ width: `${volume * 100}%` }}
                     ></div>
+                    <input
+                        type="range"
+                        min="0"
+                        max="1"
+                        step="0.01"
+                        value={volume}
+                        onChange={(e) => setVolume(e.target.value)}
+                        className="absolute w-full h-1 opacity-0 cursor-pointer"
+                    />
                 </div>
             </div>
         </div>
