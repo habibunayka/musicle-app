@@ -1,4 +1,5 @@
 import playlists from "../data/playlist.json";
+import Footer from "../layouts/MainLayouts/Footer";
 
 const PlaylistPage = () => {
     return (
@@ -58,6 +59,7 @@ const PlaylistPage = () => {
                     </div>
                 ))}
             </div>
+            <Footer/>
         </div>
     );
 };

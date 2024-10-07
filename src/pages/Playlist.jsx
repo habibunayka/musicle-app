@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import MusicItem from "../components/ListenComp/MusicItem";
 import playlists from "../data/playlist.json";
+import Footer from "../layouts/MainLayouts/Footer";
 
 const Playlist = () => {
     const { playlist } = useParams(); 
@@ -13,7 +14,7 @@ const Playlist = () => {
     const songs = currentPlaylist.songs || []; 
 
     return (
-        <div className="min-h-screen w-full p-4 flex flex-col items-center relative text-white">
+        <div className="w-full p-4 flex flex-col items-center relative text-white">
             <div
                 className="absolute inset-0 bg-cover h-64 bg-center rounded-lg"
                 style={{
@@ -67,6 +68,7 @@ const Playlist = () => {
                     </tbody>
                 </table>
             </div>
+            <Footer/>
         </div>
     );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../layouts/MainLayouts/Footer";
 
 const PremiumPlans = () => {
     const plans = [
@@ -104,6 +105,7 @@ const PremiumPlans = () => {
                     </div>
                 ))}
             </div>
+            <Footer/>
         </div>
     );
 };
