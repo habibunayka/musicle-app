@@ -1,16 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 
-const MusicPlayer = () => {
+const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
+    const [duration, setDuration] = useState(0); 
     const audioRef = useRef(null);
-    const duration = 246; 
-
-    const songs = [
-        { title: "Can I Be Him", artist: "James Arthur", src: "/assets/music/Can-I-Be-Him.mp3" },
-    ];
-
-    const [currentSongIndex, setCurrentSongIndex] = useState(0); 
 
     const togglePlayPause = () => {
         if (isPlaying) {
@@ -77,7 +71,21 @@ const MusicPlayer = () => {
 
     useEffect(() => {
         audioRef.current.src = songs[currentSongIndex].src;
-        resetPlayer(); 
+        resetPlayer();
+    }, [currentSongIndex, songs]);
+
+    // Dapatkan durasi saat metadata sudah dimuat
+    useEffect(() => {
+        const handleMetadataLoad = () => {
+            setDuration(audioRef.current.duration);
+        };
+
+        const audioElement = audioRef.current;
+        audioElement.addEventListener("loadedmetadata", handleMetadataLoad);
+
+        return () => {
+            audioElement.removeEventListener("loadedmetadata", handleMetadataLoad);
+        };
     }, [currentSongIndex]);
 
     return (
@@ -90,7 +98,7 @@ const MusicPlayer = () => {
             <div className="flex flex-row items-center w-64">
                 <div className="w-14 h-14 bg-gray-500 rounded-md overflow-hidden">
                     <img
-                        src={`https://i.scdn.co/image/ab67616d00001e0220beb61f61fcbeb33b10a9ab`} 
+                        src={songs[currentSongIndex].image} 
                         alt="Song Thumbnail"
                         className="w-full h-full object-cover"
                     />

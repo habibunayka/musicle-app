@@ -18,7 +18,7 @@ const Banner = () => {
                 </p>
                 <div
                     onClick={() => navigate(`./statistic`)}
-                    className="px-6 py-3 mt-6 text-white bg-primary rounded-full text-lg font-semibold hover:bg-primary-dark transition duration-300"
+                    className="px-6 py-3 mt-6 text-white hover:cursor-pointer bg-primary rounded-full text-lg font-semibold hover:bg-primary-dark transition duration-300"
                 >
                     Upgrade Now!
                 </div>

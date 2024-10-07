@@ -3,7 +3,7 @@ import playlists from "../data/playlist.json";
 import Footer from "../layouts/MainLayouts/Footer";
 
 const PlaylistPage = () => {
-    const navigate = useNavigate(); // Menggunakan hook untuk navigasi
+    const navigate = useNavigate(); 
 
     return (
         <div className="w-full p-4">
@@ -15,8 +15,8 @@ const PlaylistPage = () => {
                     <div 
                         key={key} 
                         className="flex-shrink-0 w-48 relative"
-                        onClick={() => navigate(`/playlist/${playlists.yourPlaylists[key].link}`)} // Navigasi tanpa reload
-                        style={{ cursor: "pointer" }} // Menambahkan pointer sebagai indikasi clickable
+                        onClick={() => navigate(`/playlist/${playlists.yourPlaylists[key].link}`)}
+                        style={{ cursor: "pointer" }}
                     >
                         <div
                             className="rounded-lg overflow-hidden shadow-lg"
@@ -45,7 +45,7 @@ const PlaylistPage = () => {
                 {Object.keys(playlists.discover).map((key) => (
                     <div
                         key={key}
-                        className="rounded-lg overflow-hidden h-48 shadow-lg relative"
+                        className="rounded-lg overflow-hidden h-48 shadow-lg relative cursor-pointer"
                         style={{
                             backgroundColor: playlists.discover[key].color,
                         }}
