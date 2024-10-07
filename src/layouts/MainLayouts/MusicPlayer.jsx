@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
-    const [duration, setDuration] = useState(0); 
+    const [duration, setDuration] = useState(0);
     const audioRef = useRef(null);
 
     const togglePlayPause = () => {
@@ -21,7 +21,7 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
             interval = setInterval(() => {
                 setProgress((prevProgress) => {
                     if (prevProgress < 100) {
-                        return prevProgress + (100 / duration);
+                        return prevProgress + 100 / duration;
                     } else {
                         clearInterval(interval);
                         return 100;
@@ -37,7 +37,10 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
     const formatTime = (seconds) => {
         const minutes = Math.floor(seconds / 60);
         const secs = Math.floor(seconds % 60);
-        return `${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+        return `${String(minutes).padStart(2, "0")}:${String(secs).padStart(
+            2,
+            "0"
+        )}`;
     };
 
     const handleSeek = (e) => {
@@ -50,20 +53,28 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
     };
 
     const handlePrevious = () => {
-        setCurrentSongIndex((prevIndex) => (prevIndex === 0 ? songs.length - 1 : prevIndex - 1));
-        resetPlayer();
+        setTimeout(() => {
+            setCurrentSongIndex((prevIndex) =>
+                prevIndex === 0 ? songs.length - 1 : prevIndex - 1
+            );
+            resetPlayer();
+        }, 300);
     };
 
     const handleNext = () => {
-        setCurrentSongIndex((prevIndex) => (prevIndex === songs.length - 1 ? 0 : prevIndex + 1));
-        resetPlayer();
+        setTimeout(() => {
+            setCurrentSongIndex((prevIndex) =>
+                prevIndex === songs.length - 1 ? 0 : prevIndex + 1
+            );
+            resetPlayer();
+        }, 300);
     };
 
     const resetPlayer = () => {
-        setProgress(0); 
-        audioRef.current.currentTime = 0; 
+        setProgress(0);
+        audioRef.current.currentTime = 0;
         if (isPlaying) {
-            audioRef.current.play(); 
+            audioRef.current.play();
         } else {
             audioRef.current.pause();
         }
@@ -84,36 +95,43 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
         audioElement.addEventListener("loadedmetadata", handleMetadataLoad);
 
         return () => {
-            audioElement.removeEventListener("loadedmetadata", handleMetadataLoad);
+            audioElement.removeEventListener(
+                "loadedmetadata",
+                handleMetadataLoad
+            );
         };
     }, [currentSongIndex]);
 
     return (
         <div className="flex flex-row justify-between items-center bg-secondary w-full p-4 text-white">
-            <audio
-                ref={audioRef}
-                onEnded={() => setIsPlaying(false)}
-            />
-            
+            <audio ref={audioRef} onEnded={() => handleNext()} />
+
             <div className="flex flex-row items-center w-64">
                 <div className="w-14 h-14 bg-gray-500 rounded-md overflow-hidden">
                     <img
-                        src={songs[currentSongIndex].image} 
+                        src={songs[currentSongIndex].image}
                         alt="Song Thumbnail"
                         className="w-full h-full object-cover"
                     />
                 </div>
                 <div className="ml-4 mr-5 h-full flex gap-1 justify-center flex-col">
-                    <span className="font-semibold text-sm">{songs[currentSongIndex].title}</span>
-                    <span className="text-xs text-gray-400">{songs[currentSongIndex].artist}</span>
+                    <span className="font-semibold text-sm">
+                        {songs[currentSongIndex].title}
+                    </span>
+                    <span className="text-xs text-gray-400">
+                        {songs[currentSongIndex].artist}
+                    </span>
                 </div>
             </div>
 
             <div className="flex flex-col w-[550px] mx-6">
                 <div className="flex flex-row items-center justify-center gap-6">
-                    <button onClick={handlePrevious} className="text-xl hover:text-gray-400">
+                    <button
+                        onClick={handlePrevious}
+                        className="text-xl hover:text-gray-400"
+                    >
                         <img
-                            src="/assets/icons/previous.svg" 
+                            src="/assets/icons/previous.svg"
                             alt="Previous"
                             className="h-4"
                         />
@@ -123,12 +141,17 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
                         className="hover:text-gray-400"
                     >
                         <img
-                            src={`/assets/icons/${isPlaying ? "pause-btn" : "play-btn"}.svg`}
+                            src={`/assets/icons/${
+                                isPlaying ? "pause-btn" : "play-btn"
+                            }.svg`}
                             alt="Play/Pause"
                             className="h-6"
                         />
                     </button>
-                    <button onClick={handleNext} className="text-xl hover:text-gray-400">
+                    <button
+                        onClick={handleNext}
+                        className="text-xl hover:text-gray-400"
+                    >
                         <img
                             src="/assets/icons/next.svg"
                             alt="Next"
@@ -139,7 +162,7 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
 
                 <div className="flex justify-between text-xs">
                     <span>{formatTime((progress / 100) * duration)}</span>
-                    <span>{formatTime(duration)}</span> 
+                    <span>{formatTime(duration)}</span>
                 </div>
                 <div
                     className="relative w-full h-1 bg-gray-600 rounded-full mt-1 cursor-pointer"
