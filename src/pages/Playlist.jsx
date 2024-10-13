@@ -31,11 +31,11 @@ const Playlist = () => {
                     <h2 className="text-3xl font-bold mb-2">
                         {currentPlaylist.title}
                     </h2>
-                    <p className="text-gray-400 text-sm mb-2">
+                    <p className="text-gray-400 text-xs md:text-sm mb-2">
                         {songs.length} Songs
                     </p>
                 </div>
-                <button className="bg-primary relative text-white p-6 rounded-full h-fit w-fit flex items-center mr-8 top-10">
+                <button className="bg-primary relative text-white p-4 px-5 md:px-6 md:p-6 rounded-full h-fit w-fit flex items-center mr-2 md:mr-8 top-10">
                     <img
                         src="/assets/icons/play-btn.svg"
                         alt="play"

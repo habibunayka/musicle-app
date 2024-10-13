@@ -7,8 +7,8 @@ const Navbar = () => {
                 Musicle
             </div>
             <Search/>
-            <div className="flex flex-row justify-between items-center min-w-96 pl-7 pr-4">
-                <div className="flex flex-row justify-between items-center rounded-full px-4 py-[8px] border border-primary hover:bg-primary text-primary hover:text-background transition-all duration-300 cursor-pointer font-medium">
+            <div className="flex flex-row justify-between items-center lg:min-w-96 pl-7 pr-4">
+                <div className="hidden lg:flex flex-row justify-between items-center rounded-full px-4 py-[8px] border border-primary hover:bg-primary text-primary hover:text-background transition-all duration-300 cursor-pointer font-medium">
                     <div className="text-[14px]">My Account</div>
                     <div className="ml-4">{">"}</div>
                 </div>

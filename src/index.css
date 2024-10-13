@@ -21,6 +21,7 @@
 }
 
 * {
+    box-sizing: border-box;
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: #333 #0A0A0A;
@@ -28,6 +29,7 @@
 
 body {
   background-color: #0A0A0A;
+  overflow: hidden;
 }
 
 @keyframes animate-ping {

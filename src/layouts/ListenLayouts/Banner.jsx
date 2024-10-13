@@ -5,14 +5,14 @@ const Banner = () => {
     return (
         <div className="flex flex-row justify-between relative gap-5 mb-8 overflow-hidden">
 
-            <div className="w-[50%] h-80 bg-gradient-to-b from-primary50 to-primary30 rounded-lg flex flex-col items-start justify-center p-6">
-                <div className="text-sm text-slate-400 mb-2">
+            <div className="w-[50%] h-80 bg-gradient-to-b from-primary50 to-primary30 rounded-lg hidden lg:flex flex-col items-start justify-center p-6">
+                <div className="text-xs md:text-sm text-slate-400 mb-2">
                     Enjoy unlimited premium features!
                 </div>
                 <h2 className="text-white text-4xl font-medium font-orbitron mb-4">
                     Musicle+
                 </h2>
-                <p className="text-white opacity-80 text-md">
+                <p className="text-white opacity-80 text-sm md:text-md">
                     Get exclusive access to all premium features, without
                     limitations.
                 </p>
@@ -43,7 +43,7 @@ const Banner = () => {
                     <p className="text-white opacity-70 text-xl font-semibold">
                         Join us for an unforgettable night!
                     </p>
-                    <p className="text-white opacity-70 text-md font-light mt-2">
+                    <p className="text-white opacity-70 text-sm md:text-md font-light mt-2">
                         Starts: October 30th, 2024 at 7:00 PM
                     </p>
                     

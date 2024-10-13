@@ -19,7 +19,7 @@ const SidebarPlaylistBtn = ({ name, icon, isActive }) => {
             <div
                 className={`${
                     isButtonActive ? "text-primary" : "text-white"
-                } text-sm ml-4 transition-all duration-300`}
+                } text-xs md:text-sm ml-4 transition-all duration-300`}
             >
                 {name}
             </div>

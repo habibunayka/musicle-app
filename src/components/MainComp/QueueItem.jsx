@@ -20,10 +20,10 @@ const SongList = ({ title, desc, image }) => {
                     </div>
                 </div>
                 <div className="flex flex-col justify-center ml-4 gap-1">
-                    <div className="text-sm text-white font-medium">
+                    <div className="text-xs md:text-sm text-white font-medium">
                         {title}
                     </div>
-                    <div className="text-sm text-slate-400">{desc}</div>
+                    <div className="text-xs md:text-sm text-slate-400">{desc}</div>
                 </div>
             </div>
         </div>

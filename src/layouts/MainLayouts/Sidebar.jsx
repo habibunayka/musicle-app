@@ -73,7 +73,7 @@ const Sidebar = () => {
     };
 
     return (
-        <div className="relative flex flex-col pt-[22px] overflow-x-hidden pl-8 h-screen min-w-64 max-w-64">
+        <div className="relative hidden lg:flex flex-col pt-[22px] overflow-x-hidden pl-8 h-screen min-w-64 max-w-64">
 
             <div
                 className="absolute left-0 top-0 bottom-0 w-1 h-10 mt-2 bg-primary transition-transform duration-300"

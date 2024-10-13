@@ -17,7 +17,7 @@ const Search = () => {
     }, [searchTerm]);
 
     return (
-        <div className="w-full h-fit sticky top-0 bg-background">
+        <div className="hidden xl:flex w-full h-fit sticky top-0 bg-background">
             <div className="flex flex-row w-full h-fit">
                 <div className="flex flex-row rounded-lg items-center bg-[#FFFFFF20] h-full py-2.5 px-3">
                     <img
@@ -38,7 +38,7 @@ const Search = () => {
             </div>
 
             {isFocused && searchTerm && (
-                <div className="absolute bg-[#101010] p-4 rounded-lg w-[607px] max-h-60 overflow-y-auto shadow-lg mt-3 z-50 overflow-x-hidden">
+                <div className="absolute bg-[#101010] top-12 p-4 rounded-lg w-[607px] max-h-60 overflow-y-auto shadow-lg mt-3 z-50 overflow-x-hidden">
                     {filteredSongs.length > 0 ? (
                         filteredSongs.map((song, index) => (
                             <div
@@ -60,7 +60,7 @@ const Search = () => {
                                     </div>
                                 </div>
                                 <div className="flex flex-col ml-3">
-                                    <div className="text-white text-sm">
+                                    <div className="text-white text-xs md:text-sm">
                                         <strong>{song.title}</strong> - {song.artist}
                                     </div>
                                     <div className="text-gray-400 mt-2 text-xs">
@@ -70,7 +70,7 @@ const Search = () => {
                             </div>
                         ))
                     ) : (
-                        <div className="text-gray-400 text-sm">
+                        <div className="text-gray-400 text-xs md:text-sm">
                             No results found
                         </div>
                     )}
@@ -78,8 +78,8 @@ const Search = () => {
             )}
 
             {isFocused && !searchTerm && (
-                <div className="absolute bg-[#161616] p-4 rounded-lg w-[607px] max-h-60 overflow-y-auto shadow-lg z-30 mt-3 overflow-x-hidden">
-                    <div className="text-gray-400 text-sm mb-3 px-4">
+                <div className="absolute bg-[#161616] top-12 p-4 rounded-lg w-[607px] max-h-60 overflow-y-auto shadow-lg z-30 mt-3 overflow-x-hidden">
+                    <div className="text-gray-400 text-xs md:text-sm mb-3 px-4">
                         Recently explored music
                     </div>
                     {songData.songs.slice(0, 5).map((song, index) => (
@@ -102,7 +102,7 @@ const Search = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col ml-3">
-                                <div className="text-white text-sm">
+                                <div className="text-white text-xs md:text-sm">
                                     <strong>{song.title}</strong> - {song.artist}
                                 </div>
                                 <div className="text-gray-400 mt-2 text-xs">

@@ -76,19 +76,19 @@ const Playlists = () => {
                     <h2 className="text-primary font-medium text-2xl">
                         Maybe You Like
                     </h2>
-                    <h4 className="text-slate-400 font-medium text-md mb-4">
+                    <h4 className="text-slate-400 font-medium text-sm md:text-md mb-4">
                         Based on Your Playlist
                     </h4>
                 </div>
-                <div className="text-primary font-medium text-md mr-10 cursor-pointer">See All</div>
+                <div className="text-primary font-medium text-sm md:text-md mr-10 cursor-pointer">See All</div>
             </div>
 
             <table className="w-full table-auto text-left">
                 <thead className="mb-4">
                     <tr>
-                        <th className="text-slate-400 font-medium text-md pl-2">Title</th>
-                        <th className="text-slate-400 font-medium text-md">Description</th>
-                        <th className="text-slate-400 font-medium text-md">Date</th>
+                        <th className="text-slate-400 font-medium text-sm md:text-md pl-2">Title</th>
+                        <th className="text-slate-400 font-medium text-sm md:text-md">Description</th>
+                        <th className="text-slate-400 font-medium text-sm md:text-md">Date</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -107,16 +107,16 @@ const Playlists = () => {
 
             <div className="mt-8">
                 <h3 className="text-primary font-medium text-2xl">Recommended Music</h3>
-                <h4 className="text-slate-400 font-medium text-md mb-4">
+                <h4 className="text-slate-400 font-medium text-sm md:text-md mb-4">
                     Based on Your Music
                 </h4>
                 <table className="w-full table-auto text-left">
                     <thead className="mb-4">
                         <tr>
-                            <th className="text-slate-400 font-medium text-md pl-2">Title</th>
-                            <th className="text-slate-400 font-medium text-md">Album</th>
-                            <th className="text-slate-400 font-medium text-md">Duration</th>
-                            <th className="text-slate-400 font-medium text-md"></th>
+                            <th className="text-slate-400 font-medium text-sm md:text-md pl-2">Title</th>
+                            <th className="text-slate-400 font-medium text-sm md:text-md">Album</th>
+                            <th className="text-slate-400 font-medium text-sm md:text-md">Duration</th>
+                            <th className="text-slate-400 font-medium text-sm md:text-md"></th>
                         </tr>
                     </thead>
                     <tbody>

@@ -48,7 +48,7 @@ const PremiumPlans = () => {
     return (
         <div className="min-h-screen flex flex-col items-center">
             <div className="rounded-lg w-full bg-gradient-to-b from-primary50 to-primary30 flex flex-col items-center justify-center py-20">
-                <div className="text-sm text-slate-400 mb-6">
+                <div className="text-xs md:text-sm text-slate-400 mb-6">
                     Enjoy unlimited premium features!
                 </div>
                 <h2 className="text-white text-6xl font-medium font-orbitron mb-6">

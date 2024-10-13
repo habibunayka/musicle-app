@@ -119,7 +119,7 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
                     />
                 </div>
                 <div className="ml-4 mr-5 h-full flex gap-1 justify-center flex-col">
-                    <span className="font-semibold text-sm">
+                    <span className="font-semibold text-xs md:text-sm">
                         {songs[currentSongIndex].title}
                     </span>
                     <span className="text-xs text-gray-400">
@@ -128,8 +128,8 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
                 </div>
             </div>
 
-            <div className="flex flex-col w-[550px] mx-6">
-                <div className="flex flex-row items-center justify-center gap-6">
+            <div className="flex flex-col w-auto lg:w-[550px] mx-6">
+                <div className="flex flex-row items-center justify-end lg:justify-center gap-6">
                     <button
                         onClick={handlePrevious}
                         className="text-xl hover:text-gray-400"
@@ -164,12 +164,12 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
                     </button>
                 </div>
 
-                <div className="flex justify-between text-xs">
+                <div className="hidden lg:flex justify-between text-xs">
                     <span>{formatTime((progress / 100) * duration)}</span>
                     <span>{formatTime(duration)}</span>
                 </div>
                 <div
-                    className="relative w-full h-1 bg-gray-600 rounded-full mt-1 cursor-pointer"
+                    className="hidden lg:flex relative w-full h-1 bg-gray-600 rounded-full mt-1 cursor-pointer"
                     onMouseDown={(e) => handleSeek(e)}
                     onTouchStart={(e) => handleSeek(e.touches[0])}
                 >
@@ -180,7 +180,7 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
                 </div>
             </div>
 
-            <div className="flex flex-row w-64 items-center justify-end gap-2">
+            <div className="hidden lg:flex flex-row w-64 items-center justify-end gap-2">
                 <button className="text-xl hover:text-gray-400">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -194,7 +194,7 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
                 </button>
                 <div className="relative w-32 h-1 bg-gray-600 rounded-full">
                     <div
-                        className="absolute h-1 bg-primary rounded-full"
+                        className="hidden lg:absolute h-1 bg-primary rounded-full"
                         style={{ width: `${volume * 100}%` }}
                     ></div>
                     <input
@@ -204,9 +204,19 @@ const MusicPlayer = ({ currentSongIndex, setCurrentSongIndex, songs }) => {
                         step="0.01"
                         value={volume}
                         onChange={(e) => setVolume(e.target.value)}
-                        className="absolute w-full h-1 opacity-0 cursor-pointer"
+                        className="hidden lg:absolute w-full h-1 opacity-0 cursor-pointer"
                     />
                 </div>
+            </div>
+            <div
+                className="absolute lg:hidden bottom-0 left-0 w-full h-1 bg-gray-600 rounded-full mt-1 cursor-pointer"
+                onMouseDown={(e) => handleSeek(e)}
+                onTouchStart={(e) => handleSeek(e.touches[0])}
+            >
+                <div
+                    className="absolute h-1 bg-primary rounded-full"
+                    style={{ width: `${progress}%` }}
+                ></div>
             </div>
         </div>
     );
